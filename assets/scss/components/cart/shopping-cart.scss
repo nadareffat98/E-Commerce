@@ -1,0 +1,107 @@
+.shopping-cart-container {
+    :deep(.p-datatable) {
+        tr,
+        th,
+        thead {
+            background: $body-bg !important;
+        }
+        th {
+            font-size: 14px;
+            font-weight: 700;
+            color: $title-color;
+            padding: 0.7rem;
+        }
+        td {
+            padding: 0.3rem 0.5rem;
+            color: $title-color;
+        }
+        td,
+        th {
+            border: none !important;
+            text-align: center;
+        }
+        .p-column-header-content {
+            justify-content: center;
+        }
+        img {
+            border: 2px solid $primary-gray;
+        }
+    }
+    .cubon-container {
+        padding: 0.5rem;
+    }
+}
+.shopping-cart-container .left-side-container,
+.payment-container .left-side-container,
+.payment-container .right-side-container {
+    .p-card {
+        :deep(.p-card-body) {
+            padding: 1rem 1.5rem !important;
+            gap: 0.3rem !important;
+            h3,
+            .p-card-footer p {
+                color: $title-color;
+                font-size: 20px;
+                font-weight: 700;
+            }
+            .price-inf-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                p,
+                b {
+                    font-size: 18px;
+                }
+                p,
+                span,
+                b {
+                    color: $title-color;
+                }
+                .discount,
+                .discount span {
+                    color: $red;
+                }
+                span {
+                    font-size: 12px;
+                }
+            }
+            label {
+                color: $title-color;
+            }
+        }
+    }
+}
+
+.shipping-method,
+.payment-method {
+    label {
+        color: $title-color;
+        font-weight: 700;
+        font-size: 18px;
+        span {
+            color: $global-color;
+        }
+    }
+    .p-radiobutton {
+        align-items: center;
+        :deep(.p-radiobutton-box) {
+            width: 1rem;
+            height: 1rem;
+            .p-radiobutton-icon {
+                width: 0.5rem;
+                height: 0.5rem;
+            }
+        }
+    }
+}
+.file-upload-input
+{
+    display: none;
+}
+
+.svg-icon
+{
+    width: 20px;
+    height: 20px;
+    background-color: $global-color;
+}

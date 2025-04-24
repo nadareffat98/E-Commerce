@@ -1,0 +1,31 @@
+.order-container {
+    h3 {
+        color: $global-color;
+        font-size: 30px;
+    }
+    .card-inf-container {
+        :deep(.p-card-content) {
+            p {
+                font-weight: 700;
+                color: $title-color;
+                display: flex;
+                align-items: flex-end;
+            }
+            span {
+                font-weight: 500;
+                margin-right: 5px;
+                .p-badge {
+                    border-radius: 12px;
+                }
+                &.qty-container {
+                    color: $global-color;
+                    font-weight: 700;
+                }
+            }
+            h4 {
+                font-size: 20px;
+                color: $title-color;
+            }
+        }
+    }
+}

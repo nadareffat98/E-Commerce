@@ -1,0 +1,67 @@
+.profile-menu-container {
+    .p-avatar {
+        width: 100px;
+        height: 100px;
+    }
+    .profile-name {
+        color: $title-color;
+        font-size: 24px;
+    }
+    a {
+        font-weight: 700;
+        color: $second-color;
+        padding: 0.6rem 1rem;
+        width: 100%;
+        .svg-icon {
+            width: 22px;
+            height: 22px;
+            background-color: $second-color;
+        }
+        &:last-child {
+            .svg-icon {
+                background-color: $red;
+            }
+            color: $red !important;
+
+            cursor: pointer;
+        }
+        &:hover:not(:last-child),
+        &.router-link-exact-active {
+            position: relative;
+            color: $global-color;
+            .svg-icon {
+                background-color: $global-color;
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: $global-color;
+                opacity: 0.1;
+                // z-index: 1;
+                border-radius: 6px;
+            }
+        }
+    }
+    .scroll-container {
+        overflow-x: auto;
+        white-space: nowrap;
+        &::-webkit-scrollbar {
+            height: 0px;
+        }
+    }
+}
+@media (max-width: 500px) {
+    .profile-menu-container {
+        .scroll-container {
+            gap: 0!important;
+        }
+        a {
+            font-size: 12px;
+            padding: 10px !important;
+        }
+    }
+}

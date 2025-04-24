@@ -1,0 +1,25 @@
+.product-container {
+    max-width: 300px;
+    border-radius: 16px;
+    background: white;
+    // padding: 5px;
+    direction: ltr;
+    :deep(.p-tag) {
+        background: $global-color;
+        color: white;
+        top: 10px !important;
+        right: 5px;
+        left: auto !important;
+        padding: 2px 18px;
+        border-radius: 20px;
+    }
+    .p-divider {
+        color: $primary-gray;
+        &::before {
+            border-width: 2px;
+        }
+    }
+    .product-inf {
+        direction: rtl;
+    }
+}

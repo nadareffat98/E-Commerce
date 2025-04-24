@@ -1,0 +1,112 @@
+.features-list,
+.features-inf {
+    background: white;
+    border: 1px solid #d1d1d1;
+    border-radius: 20px;
+    p,
+    span {
+        color: $font-color;
+    }
+}
+.features-list {
+    padding: 2rem 3rem;
+    .feature-container {
+        flex: 1 1 25%;
+        justify-content: center;
+        padding: 0 1rem;
+        box-sizing: border-box;
+    }
+    p {
+        font-size: 20px;
+    }
+    span {
+        font-size: 14px;
+    }
+}
+.features-inf {
+    p {
+        font-size: 30px;
+        font-weight: 700;
+    }
+    span {
+        font-size: 20px;
+    }
+    .mobile-img {
+        display: flex;
+    }
+}
+
+//responsive
+@media (max-width: 1200px) {
+    .features-list {
+        padding: 2rem 0.5rem;
+        gap: 16px;
+        .feature-container {
+            flex: 1 1 40%;
+            border: none !important;
+            justify-content: flex-start;
+            margin-right: 35px;
+            padding: 0;
+            .individual-feature {
+                flex-direction: column;
+                gap: 10px !important;
+            }
+        }
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+@media (max-width: 860px) {
+    .features-inf .mobile-img :deep(img) {
+        width: 450px;
+        height: 250px;
+    }
+}
+@media (max-width: 768px) {
+    .features-list {
+        .feature-container {
+            .feature-content {
+                p {
+                    font-size: 14px;
+                    font-weight: 700;
+                }
+                span {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .features-inf {
+        p {
+            font-size: 18px;
+            font-weight: 700;
+        }
+        span {
+            font-size: 12px;
+        }
+        .stores-img :deep(img) {
+            width: 120px !important;
+            height: 35px !important;
+        }
+    }
+}
+@media (max-width: 575px) {
+    .features-inf {
+        overflow: hidden;
+        .mobile-img :deep(img) {
+            width: 350px !important;
+            height: 180px !important;
+        }
+    }
+    .features-list {
+        .feature-container {
+            flex: 1 1 30%;
+        }
+    }
+}
+@media (max-width:425px)
+{
+
+}

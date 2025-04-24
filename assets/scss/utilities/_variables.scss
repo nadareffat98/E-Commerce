@@ -1,0 +1,39 @@
+// @import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap");
+
+// Body
+$body-bg: var(--main-bg-color);
+$base-unit: 16px;
+
+// Typography
+$font-family-sans-serif: "Nunito", sans-serif;
+$font-store: var(--font-family);
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+$base-font: 500 14px;
+
+// Colors
+$primary: #119744;
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #ef5944;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+$global-color: var(--main-color);
+$header-color: #515151;
+$font-color: var(--font-color);
+$second-color: var(--second-color);
+$title-color: #556987;
+$primary-green: #e6f8ee;
+$primary-gray: #eef0f3;
+$pat-color: #fff;
+
+//
+$global-border: 1px solid #D5DAE1;
+$input-color: #f5f5f5;
+$input-text-color: #c2c2c2;
+$box-shadow: 0px 6px 7px 0px #00000026;

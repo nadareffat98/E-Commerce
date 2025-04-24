@@ -1,0 +1,26 @@
+// breakpoints
+$breakpoint-small: 320px;
+$breakpoint-mobile: 576px;
+$breakpoint-tablet: 768px;
+$breakpoint-md-tablet: 900px;
+$breakpoint-lg-tablet: 992px;
+$breakpoint-large: 1024px;
+$breakpoint-xlarge: 1300px;
+
+$breakpoints: (
+  small: $breakpoint-small,
+  mobile: $breakpoint-mobile,
+  tablet: $breakpoint-tablet,
+  md-tablet: $breakpoint-md-tablet,
+  lg-tablet: $breakpoint-lg-tablet,
+  large: $breakpoint-large,
+  xlarge: $breakpoint-xlarge
+);
+
+@mixin devices($breakpoints-to-apply...) {
+  @each $breakpoint in $breakpoints-to-apply {
+    @media only screen and (max-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+}

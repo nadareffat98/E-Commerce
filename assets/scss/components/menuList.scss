@@ -1,0 +1,26 @@
+.menu-container {
+    .p-button {
+        color: #BBC3CF;
+        padding-top: 0;
+        padding-bottom: 0;
+        :deep(.p-button-label) {
+            font-weight: 700;
+        }
+        :deep(.p-button-icon) {
+            margin-right: 0;
+            margin-left: 5px;
+        }
+        &:hover{
+            color: $global-color;
+        }
+    }
+    .router-link-exact-active {
+        .p-button {
+            color: $global-color;
+        }
+    }
+    .p-button:last-child
+    {
+        padding-left: 0;
+    }
+}

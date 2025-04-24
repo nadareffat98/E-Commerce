@@ -1,0 +1,35 @@
+.p-stepper {
+    width: 100%;
+    :deep(.p-stepper-nav) {
+        justify-content: center !important;
+        margin-top: 3rem ;
+    }
+    :deep(.p-stepper-header) {
+        flex: none !important;
+        align-items: flex-end !important;
+        .separator {
+            font-size: 1.5rem;
+            color: $second-color;
+        }
+        &.p-highlight span,
+        .active {
+            color: $global-color;
+            cursor: pointer;
+        }
+        span {
+            font-weight: 700;
+            font-size: 18px;
+            color: $second-color;
+        }
+        .pi-check {
+            background: $global-color;
+            color: white;
+            font-size: 0.8rem;
+            padding: 3px;
+        }
+    }
+    :deep(.p-stepper-panels) {
+        background: transparent !important;
+        padding: 3.5rem 0 0;
+    }
+}

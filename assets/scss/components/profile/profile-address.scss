@@ -1,0 +1,50 @@
+.address-container {
+    .address-inf {
+        .svg-icon {
+            width: 30px;
+            height: 30px;
+            background-color: $font-color;
+        }
+        span {
+            color: $font-color;
+        }
+    }
+    button :deep(span) {
+        font-weight: 700;
+    }
+    .delete-btn {
+        background: #fef7f6;
+        border-color: #fef7f6;
+        :deep(span) {
+            color: $red;
+        }
+    }
+    .edit-btn {
+        border: none;
+        background-color: transparent;
+        position: relative;
+        width: 150px;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: $global-color;
+            opacity: 0.1;
+            // z-index: 1;
+            border-radius: 6px;
+        }
+        :deep(span) {
+            color: $global-color;
+            font-size: 12px;
+        }
+    }
+}
+@media (min-width: 768px) { 
+    .green-btn
+    {
+        width: 190px !important;
+    }
+}

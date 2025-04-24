@@ -1,0 +1,64 @@
+// general style for carousel
+.title-container {
+    a .p-button {
+        color: $second-color;
+    }
+    a .p-button {
+        font-size: 1.125rem;
+    }
+}
+.p-carousel {
+    direction: ltr;
+    :deep(.p-carousel-item) {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+// style for category
+.category-carousel {
+    :deep(button) {
+        align-items: flex-start;
+    }
+    :deep(.p-carousel-item) {
+        justify-content: center;
+    }
+    .category-container {
+        cursor: pointer;
+        span {
+            text-align: center;
+            font-size: 16px;
+            color: $font-color;
+        }
+    }
+}
+
+//style for product
+.product-carousel {
+    position: relative;
+    padding-bottom: 70px;
+    :deep(.p-link) {
+        background: $global-color;
+        color: white;
+        position: absolute;
+        bottom: 0;
+        width: 2.5rem;
+        height: 2.5rem;
+        &.p-carousel-prev {
+            right: 50%;
+        }
+        &.p-carousel-next {
+            left: 50%;
+        }
+        &.p-disabled {
+            background: transparent;
+            color: $global-color;
+        }
+    }
+}
+
+// responsive
+@media (max-width: 500px) {
+    .title-container h3 {
+        font-size: 18px;
+    }
+}
